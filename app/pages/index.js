@@ -1,40 +1,25 @@
+// pages/index.js
+
 import { useEffect, useState } from "react";
 
 export default function Home() {
 	const [users, setUsers] = useState([]);
-	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState(null);
 
 	useEffect(() => {
-		// Fetch data from the API route
-		fetch("/api/postgresql")
-			.then((response) => {
-				if (!response.ok) {
-					throw new Error(`HTTP error! status: ${response.status}`);
-				}
-				return response.json();
-			})
-			.then((data) => {
-				setUsers(data);
-				setLoading(false);
-			})
-			.catch((err) => {
-				setError(err.message);
-				setLoading(false);
-			});
+		async function fetchData() {
+			const response = await fetch("/api/users");
+			const data = await response.json();
+			setUsers(data);
+		}
+		fetchData();
 	}, []);
-
-	if (loading) return <p>Loading...</p>;
-	if (error) return <p>Error: {error}</p>;
 
 	return (
 		<div>
-			<h1>User List from PostgreSQL</h1>
+			<h1>Users List</h1>
 			<ul>
-				{users.map((user, index) => (
-					<li key={user.id}>
-						<strong>{user.name}</strong> - {user.email}
-					</li>
+				{users.map((user) => (
+					<li key={user.id}>{user.name}</li>
 				))}
 			</ul>
 		</div>
