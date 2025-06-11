@@ -43,29 +43,24 @@ const navigation = {
 					imageAlt: "Empire Earth 2",
 				},
 				{
-					name: "Accessories",
+					name: "Supreme commander II",
 					href: "#",
-					imageSrc:
-						"https://tailwindui.com/plus-assets/img/ecommerce-images/mega-menu-category-03.jpg",
-					imageAlt:
-						"Model wearing minimalist watch with black wristband and white watch face.",
+					imageSrc: "../assets/sc.jpg",
+					imageAlt: "Supreme Commander 2.",
 				},
 			],
 			sections: [
 				[
 					{
-						id: "shoes",
-						name: "Shoes & Accessories",
+						id: "rts",
+						name: "Real Time Strategy",
 						items: [
-							{ name: "Sneakers", href: "#" },
-							{ name: "Boots", href: "#" },
-							{ name: "Flats", href: "#" },
-							{ name: "Sandals", href: "#" },
-							{ name: "Heels", href: "#" },
-							{ name: "Socks", href: "#" },
+							{ name: "Red Alert", href: "#" },
+							{ name: "Empire Earth 2", href: "#" },
+							{ name: "Supreme commander II", href: "#" },
 						],
 					},
-					{
+					/* {
 						id: "collection",
 						name: "Shop Collection",
 						items: [
@@ -114,7 +109,7 @@ const navigation = {
 							{ name: "Counterfeit", href: "#" },
 							{ name: "Significant Other", href: "#" },
 						],
-					},
+					}, */
 				],
 			],
 		},
@@ -274,13 +269,10 @@ export default function Example() {
 													key={itemIdx}
 													className="group relative overflow-hidden rounded-md bg-gray-100"
 												>
-													<Image
+													<img
 														alt={item.imageAlt}
 														src={item.imageSrc}
 														className="w-full object-cover group-hover:opacity-75"
-														width={500} // adjust dimensions as needed
-														height={500}
-														placeholder="blur" // optional: uses a blurred version while loading
 													/>
 													<div className="absolute inset-0 flex flex-col justify-end">
 														<div className="bg-white/60 p-4 text-base sm:text-sm">
@@ -466,7 +458,7 @@ export default function Example() {
 																	</div>
 																))}
 															</div>
-															<div className="grid grid-cols-3 gap-x-8 gap-y-10 text-sm text-gray-500">
+															<div className="grid grid-cols-1 gap-x-8 gap-y-10 justify-end justify-items-center  text-sm text-gray-500 ">
 																{category.sections.map((column, columnIdx) => (
 																	<div key={columnIdx} className="space-y-10">
 																		{column.map((section) => (
@@ -522,15 +514,15 @@ export default function Example() {
 
 							{/* Logo */}
 							<a href="#" className="flex">
-								<span className="sr-only">Your Company</span>
+								<span className="sr-only">RetroNova</span>
 								<img
-									alt=""
-									src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-									className="h-8 w-auto"
+									alt="Retronova"
+									src="../assets/logo.webp"
+									className="h-16 w-auto"
 								/>
 							</a>
 
-							<div className="flex flex-1 items-center justify-end">
+							{/* <div className="flex flex-1 items-center justify-end">
 								<a
 									href="#"
 									className="hidden text-gray-700 hover:text-gray-800 lg:flex lg:items-center"
@@ -544,7 +536,7 @@ export default function Example() {
 									<span className="sr-only">, change currency</span>
 								</a>
 
-								{/* Search */}
+								
 								<a
 									href="#"
 									className="ml-6 hidden p-2 text-gray-400 hover:text-gray-500 lg:block"
@@ -553,7 +545,7 @@ export default function Example() {
 									<MagnifyingGlassIcon aria-hidden="true" className="size-6" />
 								</a>
 
-								{/* Account */}
+								
 								<a
 									href="#"
 									className="p-2 text-gray-400 hover:text-gray-500 lg:ml-4"
@@ -562,7 +554,7 @@ export default function Example() {
 									<UserIcon aria-hidden="true" className="size-6" />
 								</a>
 
-								{/* Cart */}
+								
 								<div className="ml-4 flow-root lg:ml-6">
 									<a href="#" className="group -m-2 flex items-center p-2">
 										<ShoppingBagIcon
@@ -574,8 +566,9 @@ export default function Example() {
 										</span>
 										<span className="sr-only">items in cart, view bag</span>
 									</a>
-								</div>
-							</div>
+                  
+								</div> 
+							</div>*/}
 						</div>
 					</div>
 				</nav>
