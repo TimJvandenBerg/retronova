@@ -115,46 +115,39 @@ const navigation = {
 		},
 		{
 			id: "Shooter",
-			name: "Shooters",
+			name: "Shooter",
 			featured: [
 				{
-					name: "Accessories",
+					name: "Unreal Tournament",
 					href: "#",
-					imageSrc:
-						"https://tailwindui.com/plus-assets/img/ecommerce-images/home-page-03-category-01.jpg",
-					imageAlt:
-						"Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters.",
+					imageSrc: "../assets/ut.jpg",
+					imageAlt: "Unreal Tournament",
 				},
 				{
-					name: "New Arrivals",
+					name: "Half life 2",
 					href: "#",
-					imageSrc:
-						"https://tailwindui.com/plus-assets/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
-					imageAlt:
-						"Drawstring top with elastic loop closure and textured interior padding.",
+					imageSrc: "../assets/hl2.jpg",
+					imageAlt: "Half Life 2",
 				},
 				{
-					name: "Artwork Tees",
+					name: "Medal Of Honor",
 					href: "#",
-					imageSrc:
-						"https://tailwindui.com/plus-assets/img/ecommerce-images/category-page-02-image-card-06.jpg",
-					imageAlt:
-						"Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
+					imageSrc: "../assets/moh.jpg",
+					imageAlt: "Medal of Honor",
 				},
 			],
 			sections: [
 				[
 					{
-						id: "shoes",
-						name: "Shoes & Accessories",
+						id: "fps",
+						name: "Shooters",
 						items: [
-							{ name: "Sneakers", href: "#" },
-							{ name: "Boots", href: "#" },
-							{ name: "Sandals", href: "#" },
-							{ name: "Socks", href: "#" },
+							{ name: "Unreal Tournament", href: "#" },
+							{ name: "Half life 2", href: "#" },
+							{ name: "Medal of honor", href: "#" },
 						],
 					},
-					{
+					/* {
 						id: "collection",
 						name: "Shop Collection",
 						items: [
@@ -200,7 +193,7 @@ const navigation = {
 							{ name: "Full Nelson", href: "#" },
 							{ name: "My Way", href: "#" },
 						],
-					},
+					}, */
 				],
 			],
 		},
