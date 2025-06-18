@@ -197,11 +197,46 @@ const navigation = {
 				],
 			],
 		},
+		{
+			id: "Builder",
+			name: "Builder",
+			featured: [
+				{
+					name: "Sim City 2000",
+					href: "#",
+					imageSrc: "../assets/SC2000.jpg",
+					imageAlt: "Sim City 2000",
+				},
+				{
+					name: "Settlers 3",
+					href: "#",
+					imageSrc: "../assets/SL3.jpg",
+					imageAlt: "Settlers 3",
+				},
+				{
+					name: "Anno 1701",
+					href: "#",
+					imageSrc: "../assets/anno1701.jpg",
+					imageAlt: "Supreme Commander 2.",
+				},
+			],
+			sections: [
+				[
+					{
+						id: "builder",
+						name: "Builders",
+						items: [
+							{ name: "Sim City 2000", href: "#" },
+							{ name: "Settlers 3", href: "#" },
+							{ name: "Anno 1701", href: "#" },
+						],
+					},
+				],
+			],
+		},
 	],
-	pages: [
-		{ name: "Company", href: "#" },
-		{ name: "Stores", href: "#" },
-	],
+
+	pages: [],
 };
 
 function classNames(...classes) {
@@ -342,13 +377,12 @@ export default function Example() {
 							<a href="#" className="-m-2 flex items-center p-2">
 								<img
 									alt=""
-									src="https://tailwindui.com/plus-assets/img/flags/flag-canada.svg"
-									className="block h-auto w-5 shrink-0"
+									src="../assets/retronova_logo.webp"
+									className="block h-auto w-18 shrink-0"
 								/>
 								<span className="ml-3 block text-base font-medium text-gray-900">
-									CAD
+									Retronova
 								</span>
-								<span className="sr-only">, change currency</span>
 							</a>
 						</div>
 					</DialogPanel>
@@ -510,7 +544,7 @@ export default function Example() {
 								<span className="sr-only">RetroNova</span>
 								<img
 									alt="Retronova"
-									src="../assets/logo.webp"
+									src="../assets/retronova_logo.webp"
 									className="h-16 w-auto"
 								/>
 							</a>
