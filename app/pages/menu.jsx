@@ -234,6 +234,43 @@ const navigation = {
 				],
 			],
 		},
+		{
+			id: "Sim",
+			name: "Simulation",
+			featured: [
+				{
+					name: "The sims 2",
+					href: "#",
+					imageSrc: "../assets/sims2.jpg",
+					imageAlt: "The sims 2",
+				},
+				{
+					name: "Theme Hospital",
+					href: "#",
+					imageSrc: "../assets/themehospital.jpg",
+					imageAlt: "Theme hospital",
+				},
+				{
+					name: "Rollarcoaster Tycoon",
+					href: "#",
+					imageSrc: "../assets/rt.jpg",
+					imageAlt: "Rollarcoaster Tycoon",
+				},
+			],
+			sections: [
+				[
+					{
+						id: "sim",
+						name: "Simulation",
+						items: [
+							{ name: "The sims 2", href: "#" },
+							{ name: "Theme Hospital", href: "#" },
+							{ name: "Rollarcoaster Tycoon", href: "#" },
+						],
+					},
+				],
+			],
+		},
 	],
 
 	pages: [],
@@ -417,12 +454,13 @@ export default function Example() {
 
 							{/* Flyout menus */}
 							<PopoverGroup className="hidden lg:block lg:flex-1 lg:self-stretch">
-								<div className="flex h-full space-x-8">
+								<div className="flex h-full space-x-15">
 									{navigation.categories.map((category) => (
 										<Popover key={category.name} className="flex">
 											<div className="relative flex">
-												<PopoverButton className="group relative z-10 flex items-center justify-center text-sm font-medium text-gray-700 transition-colors duration-200 ease-out hover:text-gray-800 data-open:text-indigo-600">
+												<PopoverButton className="group relative z-10 flex items-center justify-center text-sm font-medium text-gray-700 transition-colors duration-200 ease-out hover:text-gray-800 data-open:text-indigo-600 cursor-pointer">
 													{category.name}
+
 													<span
 														aria-hidden="true"
 														className="absolute inset-x-0 bottom-0 h-0.5 transition-colors duration-200 ease-out group-data-open:bg-indigo-600 sm:mt-5 sm:translate-y-px sm:transform"
