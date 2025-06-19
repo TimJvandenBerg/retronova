@@ -417,6 +417,7 @@ export default function Example() {
 									src="../assets/retronova_logo.webp"
 									className="block h-auto w-18 shrink-0"
 								/>
+
 								<span className="ml-3 block text-base font-medium text-gray-900">
 									Retronova
 								</span>
